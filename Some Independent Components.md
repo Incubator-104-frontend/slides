@@ -26,11 +26,11 @@ Notes:
 
 -
 
-### Draft
+### Draft-COMPONENT
 
-應用FB於*React Conf 2016*推出的圖文編輯框架
+應用FB於*React Conf 2016*推出的圖文編輯架構
 
-<!--<iframe data-src="http://localhost:3000" style="width: 95%; height: 500px;"/>-->
+<iframe data-src="./draft.html" style="width: 95%; height: 500px;"/>
 
 Notes:
 
@@ -42,7 +42,7 @@ Notes:
 
 提供介面負責處理圖片的上傳、裁切
 
-<!--<iframe data-src="http://localhost:3000" style="width: 95%; height: 500px;"/>-->
+<iframe data-src="./crop.html" style="width: 95%; height: 500px;"/>
 
 Notes:
 
@@ -59,59 +59,50 @@ Notes:
 
 -
 
-### React!?
+<img src="./architecture.svg" style="border: 0; box-shadow: none; background: transparent"/>
 
-- 缺點
+Notes: 
 
-	1. Steep Learing Curve
-	2. Lousy Syntax
-
-- 優點
-
-	1. RCP like Experience
-	2. Easy to Modulize
-	3. Support SSR
-	4. Good Performance
-
-Notes:
-
-> 為什麼需要SPA應用
-1. Similar UX 與其他網站的體驗越相似 (no leraning curve) (eg. Gmail)
-2. MVC on F2E，減少耦合、符合DRY原則 
+> 目前進行的架構
 
 -
 
-### 採用的價值 - User
+### Why So Complicated?
+
+-
+
+### For User
 
 - **Don't make me think**
 	
-	藉由ＵＩ的高度模組化，可提供相似的瀏覽體驗，減少摸索時間，最好的ＵＸ應該讓人感覺不到
+	最好的ＵＸ應該讓使用者感覺不到。藉由ＵＩ的高度模組化，提供全產品相似的瀏覽體驗，減少介面摸索時間 <!--React-->
 
 - **Don't make me wait**
 
-	`[SPA]` RCP like Experience
+	RCP like Experience <!--React-->
 	
-	`[SSR]` TTFB、Better SEO support
+	TTFB、Better SEO support <!--SSR-->
 
 Notes:
 
 > 幾乎感覺不到換頁的時間與閃爍，與RCP的體驗相似，
 > TTFB(Time To First Byte)，將進入後的加載時間縮至最小
+> SEO Support，使用者能更快搜尋到想要的內容
 > 註：後兩者是採用ＳＳＲ才有的價值
 
 -
 
-### 採用的價值 - Developer
+### For Developer
 
 - **Clean Code**
 
-	1. Reuse and Encapsulation(DRY)
-	2. Upon the Shoulders of Giants
+	1. 封裝與重用性 <!--DRY-->
+	2. Best Practice多，與成熟度高的社群互助 <!--Upon the Shoulders of Giants-->
 
 - **Easy to debug**
 
-	1. Single stack
-	2. One way binding
+	1. 與顯示有關的邏輯不會分散在前後端 (Single stack)
+	2. 真相只有一個 (One way binding)
 	
 <img src="./two-way.png" class="fragment modal"
 style="position: absolute; bottom: 0; right: 0; margin: auto;"/><!-- .element: class="fragment fade-up" -->
@@ -152,6 +143,12 @@ Notes:
 > [解決一]由於切版和react component兩者不一致，更版時很難對齊，
 故使用簡單的ＧＵＩ輔助版控，repo放在Q槽
 > [解決二]採用活著且可操作的文件檔(與code同步更新)，清楚呈現哪些部分被設計成組件，減少溝通阻礙
+
+-
+
+### React Storybook
+
+<iframe data-src="http://buddy-mock-43560694.ap-northeast-1.elb.amazonaws.com:9001" style="width: 95%; height: 500px;"/>
 
 ---
 

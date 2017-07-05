@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.btn{
+  	border-width: 1px;
+    padding: 8px 14px;
+    margin: 2px 5px;
+    text-align: center;
+    background-color: #fff;
+    border-color: #e0e0e0;
+    border-style: solid;
+    font-size: 0.938rem;
+    font-family: "Verdana","微軟正黑體",Geneva,Tahoma,sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+    cursor: pointer;
+}
+.btn:hover{
+	background-color: #e0e0e0;
+}
+/*-確認、上傳檔案-*/
+.finish-btn{
+	border-color: #e0e0e0;
+	background-color: #fff;
+	color: #2dadf0;
+}
+.finish-btn:hover{
+	border-color: #2dadf0;
+	background-color: #2dadf0;
+	color: #fff;
+}
